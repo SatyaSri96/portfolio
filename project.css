@@ -1,0 +1,173 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Body */
+body {
+    background-color:#e6f2ff;
+    color:black;
+    min-height: 100vh;
+}
+
+/* Navbar */
+header {
+    background-color:black;
+    padding: 15px 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photo {
+    font-size: 22px;
+    font-weight: bold;
+    color:plum;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:plum;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color:red;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color:black;
+}
+
+/* Projects Grid */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Project Card */
+.project-card {
+    background-color:plum;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color:black;
+}
+
+.project-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color:black;
+}
+
+.project-card strong {
+    color:black;
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px black;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .projects-section {
+        padding: 40px 20px;
+    }
+
+    .projects-section h2 {
+        font-size: 28px;
+    }
+}
+/* Navbar logo */
+nav .logo img {
+    width: 50px;           /* size adjust chesukovachu */
+    height: 50px;          /* size adjust chesukovachu */
+    object-fit: cover;     /* image clarity maintain cheyadaniki */
+    border-radius: 50%;    /* circular shape */
+    vertical-align: middle;
+    margin-right: 5px;     /* very small space */
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* About Me text alignment */
+nav .photo {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 22px;
+    font-weight: bold;
+    color:black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Keep navbar height same */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.photo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color:purple;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color:red;
+}

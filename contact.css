@@ -1,0 +1,176 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Body */
+body {
+    background-color:#e6f2ff;
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+/* Navbar */
+header {
+    background-color:black;
+    padding: 15px 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photo {
+    font-size: 22px;
+    font-weight: bold;
+    color:plum;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:plum;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/* Main Section */
+.contact-section {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color:black;
+}
+
+.contact-section p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* Contact Cards Container */
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Single Contact Card */
+.contact-card {
+    background-color:plum;
+    padding: 25px;
+    border-radius: 12px;
+    width: 220px;
+    text-align: center;
+    box-shadow:black;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card i {
+    font-size: 40px;
+    color:black;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.contact-card p {
+    font-size: 14px;
+    color:black;
+}
+
+/* Hover Effect */
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow:red;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        padding: 15px 20px;
+    }
+
+    .contact-section {
+        padding: 40px 20px;
+    }
+}
+nav .logo img {
+    width: 50px;           /* size adjust chesukovachu */
+    height: 50px;          /* size adjust chesukovachu */
+    object-fit: cover;     /* image clarity maintain cheyadaniki */
+    border-radius: 50%;    /* circular shape */
+    vertical-align: middle;
+    margin-right: 5px;     /* very small space */
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* About Me text alignment */
+nav .photo {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 22px;
+    font-weight: bold;
+    color: #38bdf8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Keep navbar height same */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.photo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color:purple;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color:red;
+}
